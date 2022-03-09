@@ -2,7 +2,7 @@
 const VALUE_FIRST = prompt('Введите значение 1!');
 const VALUE_SECOND = prompt('Введите значение 2!');
 const RESULT = +VALUE_FIRST;
-const IS_VALID = +VALUE_SECOND < 2 || +VALUE_SECOND > 36 || Number.isNaN(+VALUE_SECOND) || Number.isNaN(+RESULT)
+const IS_VALID = +VALUE_SECOND < 2 || +VALUE_SECOND > 36 || Number.isNaN(+VALUE_SECOND) || Number.isNaN(+RESULT);
 
 if (IS_VALID){
     console.log('Некорректный ввод!');
