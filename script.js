@@ -1,21 +1,21 @@
 // Задание 1
-const valueFirst = prompt('Введите значение 1!');
-const valueSecond = prompt('Введите значение 2!');
-const result = +valueFirst;
-const IS_VALID = +valueSecond < 2 && +valueSecond > 36 && isNaN(+valueSecond) && isNaN(+valueSecond)
+const VALUE_FIRST = prompt('Введите значение 1!');
+const VALUE_SECOND = prompt('Введите значение 2!');
+const RESULT = +VALUE_FIRST;
+const IS_VALID = +VALUE_SECOND < 2 && +VALUE_SECOND > 36 && isNaN(+VALUE_SECOND) && isNaN(+VALUE_SECOND)
     
 if (IS_VALID) {
     console.log('Некорректный ввод!');
 } else {
-    console.log(result.toString(+valueSecond));
+    console.log(RESULT.toString(+VALUE_SECOND));
 }
 
 // Задание 2
-const valueThird = prompt('Введите значение 1!');
-const valueFourth = prompt('Введите значение 2!');
+const VALUE_THIRD = prompt('Введите значение 1!');
+const VALUE_FOURTH = prompt('Введите значение 2!');
 
-if (isNaN(+valueThird) || isNaN(+valueFourth)) {
+if (isNaN(+VALUE_THIRD) || isNaN(+VALUE_FOURTH)) {
     console.log('Некорректный ввод!');
 } else {
-    console.log(`Ответ: ${+valueThird + +valueFourth}, ${+valueThird / +valueFourth}.`);    
+    console.log(`Ответ: ${+VALUE_THIRD + +VALUE_FOURTH}, ${+VALUE_THIRD / +VALUE_FOURTH}.`);    
 }
