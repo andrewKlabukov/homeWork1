@@ -1,17 +1,18 @@
 // Задание 1
-let valueFirst = prompt('Введите значение 1!');
-let valueSecond = prompt('Введите значение 2!');
-let result = +valueFirst;
+const valueFirst = prompt('Введите значение 1!');
+const valueSecond = prompt('Введите значение 2!');
+const result = +valueFirst;
+const IS_VALID = +valueSecond < 2 && +valueSecond > 36 && isNaN(+valueSecond) && isNaN(+valueSecond)
     
-if (+valueSecond < 2 || +valueSecond > 36 || isNaN(+valueSecond) || isNaN(result)) {
+if (IS_VALID) {
     console.log('Некорректный ввод!');
 } else {
     console.log(result.toString(+valueSecond));
 }
 
 // Задание 2
-let valueThird = prompt('Введите значение 1!');
-let valueFourth = prompt('Введите значение 2!');
+const valueThird = prompt('Введите значение 1!');
+const valueFourth = prompt('Введите значение 2!');
 
 if (isNaN(+valueThird) || isNaN(+valueFourth)) {
     console.log('Некорректный ввод!');
